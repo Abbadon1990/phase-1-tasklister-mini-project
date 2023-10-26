@@ -1,3 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+
+  document.getElementById('create-task-form').addEventListener('submit', (e) => {
+    e.preventDefault()
+    console.log(e.target.classList.contains('create-task.form').value)
+  })
+
 });
+
